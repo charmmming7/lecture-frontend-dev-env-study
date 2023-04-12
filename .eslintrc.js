@@ -1,15 +1,18 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es6": true
     },
     "extends": "eslint:recommended",
-    "overrides": [
-    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
     "parserOptions": {
-        "ecmaVersion": "latest",
+        "ecmaVersion": 2018,
         "sourceType": "module"
     },
+    // TODO: 프리티어 설정을 추가하세요.
     "rules": {
     }
-}
+};
